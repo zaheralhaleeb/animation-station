@@ -6,25 +6,190 @@ body {
   width: 100%;
   height: 400px;
   margin-bottom: 50px; 
+}
+/* start Rainy days*/
+.rainy-days{
   background-image: url(../images/raindrops.jpg);
-  background-repeat: repeat ;
-  animation: mymove 2s infinite;
+  animation-name: rain;
+  animation: rain 2s infinite linear;
+  position: relative;
+}
+.rainy-days .totoro{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  background-image: url(../images/totoro.gif);
+  background-repeat: no-repeat ;
+  background-size: 100%;
+  -webkit-transform: translate(100px, 4px);
+  -moz-transform: translate(100px, 4px);
+  transform: translate(100px, 4px);
+  animation: totoro-walk 2s infinite linear;
 
 }
-  @-webkit-keyframes mymove {
-    from {top: 0px;}
-    to {top: 400px;}
+  @keyframes rain {
+    from{
+      top: 0;
+    }
+    to{
+      top: 200px;
+    }
   }
-  .foto{
-    background-image: url(../images/totoro.gif);
+  @keyframes totoro-walk {
+    from{
+      left: 0;
+    }
+    to{
+      left: 1200px;
+    }
+  }
+  /* end Rainy days*/
+
+  /*start Retro platformer*/
+  .retro-platformer{
+    background-color:blue;
+    height: 400px;
+    position: relative;
+  }
+  .bullet-bill{
+    height:200px;
+    width:200px;
+    margin: 0;
+    background-image:url(../images/bullet-bill.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    position: absolute;
+    -webkit-transform: translate(100px, 4px);
+    -moz-transform: translate(100px, 4px);
+    transform: translate(100px, 4px);
+    animation: bullet 2s infinite linear;
   }
-  .totoro{
-    -webkit-transform:tranlatex(100px,0);
-    -moz-transform:tranlatex(100px,0);
-    transform:tranlatex(100px,0);
+  .mario {
+    height:200px;
+    width:200px;
+    margin: 0;
+    background-image: url(../images/mario.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    position: absolute;
+    -webkit-transform: translate(100px, 4px);
+    -moz-transform: translate(100px, 4px);
+    transform: translate(100px, 4px);
+    animation: mario 4s infinite linear,
     
   }
-  
-  
-  
+  @keyframes bullet {
+    from{
+      right: 0;
+    }
+    to{
+    right: 1200px;
+    }
+  }
+  @keyframes mario {
+    from{
+      left: 0;
+    }
+    to{
+    left: 1200px;
+    }
+  }
+
+
+ /*end Retro platformer*/
+
+/*start Digital Traffic*/
+.digital-traffic{
+  background-image: url(../images/isometric.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.ambulance{
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/ambulance.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top:0 ;
+}
+.bus{
+  width: 400px;
+  height: 300px;
+  background-image: url(../images/bus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.lorry{
+  width: 400px;
+  height: 300px;
+  background-image: url(../images/lorry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 400px;
+  bottom: 100px;
+}
+.tractor{
+  width: 400px;
+  height: 300px;
+  background-image: url(../images/tractor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 700px;
+  bottom: 100px;
+}
+.truck{
+  width: 400px;
+  height: 300px;
+  background-image: url(../images/truck.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 1000px;
+}
+
+
+/*end Digital Traffic*/
+
+/*  start Space Journey*/
+.space-journey{
+background-image: url(../images/space.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+}
+.spaceship{
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/spaceship.png);
+  background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+animation-name: space;
+-webkit-transform: translate(100px, 100px)rotate(deg);
+-moz-transform: translate(100px, 100px)rotate();
+transform: translate(100px, 100px)rotate();
+animation: space 3s infinite linear;
+ 
+}
+@keyframes space {
+   0%   { left:0px; top:0px;}
+  25%  { left:900px; top:0px;}
+  50%  { left:900px; top:270px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+
+
+/*end  Space Journey*/

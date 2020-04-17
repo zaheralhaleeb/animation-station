@@ -17,7 +17,7 @@ Run `npm install`
 
 **Important!** Before working on these assignments, please make sure to create
 a new branch with the name "solution" in the terminal;
-
+git 
 `git checkout -b solution`
 
 When you have finished making your changes, use the following command to mark all changed files
